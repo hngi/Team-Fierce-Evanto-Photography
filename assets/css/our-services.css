@@ -16,7 +16,7 @@ a{
     color: inherit !important
 }
 a:hover{
-    text-decoration: none;
+    text-decoration: none !important
 }
 /* transition for the services cards */
 .items:hover{
