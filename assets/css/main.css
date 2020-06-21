@@ -1,5 +1,6 @@
 /* GLOBAL */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,34 @@ body{
     font-family: 'Quicksand', sans-serif !important;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+}
+/* ImgTop */
+#img-top {
+    height: 98vh;
+    position: relative;
+    display: inline-block !;
+    background: url(/assets/images/camera.png) center center/cover no-repeat;
+    color: #ffffff;
+    font-family: 'Pathway Gothic One', sans-serif !important;
+}
+#img-top img{
+    object-fit: cover !important;
+}
+#img-top .h1-text-hor{
+    position: absolute;
+    bottom: 2%;
+    right: 18%;
+    font-size: 100px;
+    line-height: 184px;
+}
+#img-top .h1-text-ver{
+    transform: rotate(-90.44deg);
+    position: absolute;
+    right: -20%;
+    top: 45%;
+    font-size: 38px;
+    line-height: 58px;
+    letter-spacing: 0.5em;
 }
 .home-header hr{
     width: 5%;
@@ -42,7 +70,7 @@ body{
     padding-bottom: 100px;
 }
 #contact textarea{
-    width: 529px !important;
+    width: 100% !important;
     height: 240px !important;
     background: #FEF7F1 !important;
     border: 0.5px solid rgba(243, 104, 74, 0.08) !important;
@@ -52,7 +80,7 @@ body{
    
 }
 #contact input{
-    width: 262px;
+    width: 100%;
     height: 69px;
     background: #FEF7F1 !important;
     border: 0.5px solid rgba(243, 104, 74, 0.08) !important;
@@ -62,7 +90,7 @@ body{
     outline: none !important;
 }
 #contact .btn{
-    width: 262px !important;
+    width: 100% !important;
     height: 59px !important;
     color: #ffffff !important;
     background: #FF7A00 !important;
@@ -93,6 +121,16 @@ body{
         transform: scale(1.05) !important;
         transition: transform 1s ease-in !important;
     } 
+    .service-info,
+    .portfolio-info,
+    .testimonial-info{
+        width: 90% !important;
+    }
+    .portfolio-info .row img,
+    .service-info img{
+        width: 90% !important;
+    } 
+    
 /* All */
 #about,
 #testimonial,
@@ -100,11 +138,12 @@ body{
 #portfolio,
 #services{
     padding-top: 60px;
+    width: 100% !important;
 }
 
 @media screen and (max-width:1204px){
     #img-top img{
-        width: 100%;
+        width: 98%;
     }
     #contact textarea{
         width: 100% !important;
@@ -130,24 +169,52 @@ body{
         text-align: center;
     }
 }
-@media only screen and (min-width: 1024px){
-    .portfolio-info .row img,
-    .service-info .row img{
-        width: 98% !important;
-    } 
-}
-@media only screen and (min-width: 900px){
-    .main_nav{
-        width: 25% !important;
+@media screen and (max-width:1080px){
+    #img-top .h1-text-hor{
+        position: absolute;
+        bottom: 2%;
+        right: 20%;
+        font-size: 80px;
+        line-height: 184px;
     }
 }
+@media screen and (max-width:995px){
+    #img-top .h1-text-hor{
+        position: absolute;
+        bottom: 2%;
+        right: 22%;
+        font-size: 80px;
+        line-height: 184px;
+    }
+    #img-top .h1-text-ver{
+        right: -26%;
+        top: 45%;
+        font-size: 38px;
+        line-height: 58px;
+        letter-spacing: 0.5em;
+    }
+}
+@media screen and (max-width:966px){
+    #img-top .h1-text-hor{
+        right: 27%;
+    }
+    #img-top .h1-text-ver{
+        right: -26%;
+        font-size: 34px;
+    }
+}
+@media only screen and (min-width: 900px){
+    /* .main_nav{
+        width: 25% !important;
+    } */
+}
 @media only screen and (max-width: 894px){
-    .main_nav{
+    /* .main_nav{
         width: 37% !important;
     }
     .portfolio-info .row img{
         width: 99% !important;
-    } 
+    }  */
 }
 @media only screen and (max-width: 425px){
     .portfolio-info .row img{
@@ -163,9 +230,38 @@ body{
     .header-h3{
         font-size: 35px;
     }
+    .show h1{
+        font-size: 40px !important;
+    }
 }
-@media only screen and (min-width: 768px){
-    .main_nav{
-        width: 22% !important;
+@media only screen and (max-width: 325px){
+    
+    .show h1{
+        font-size: 30px !important;
+    }
+}
+@media only screen and (max-width: 768px){
+    /* ImgTop */
+    #img-top {
+        position: relative;
+       text-align: center;
+        width: 100%;
+    }
+    .show{
+        display: block !important;
+        line-height: 160px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .show h1{
+        font-size: 50px;
+    }
+    #img-top .h1-text-hor{
+        display: none !important;
+    }
+    #img-top .h1-text-ver{
+        display: none !important;
     }
 }
