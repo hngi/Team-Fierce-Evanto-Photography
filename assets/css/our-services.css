@@ -11,6 +11,13 @@
     max-height: 100px;
     margin-bottom:30px !important
 }
+a{
+    text-decoration: none;
+    color: inherit !important
+}
+a:hover{
+    text-decoration: none;
+}
 /* transition for the services cards */
 .items:hover{
     transform: scale(1.06);
