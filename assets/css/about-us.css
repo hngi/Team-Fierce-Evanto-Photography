@@ -63,7 +63,7 @@ body{
 	}
 	.main{
 		padding: 1.875rem;
-
+		text-align: justify;
 	}
 
 	.hide{
@@ -114,6 +114,20 @@ body{
 	}
 	.hide-logo{
 		display: none;
+	}
+
+	.d-block ,.w-100{
+		padding: 0.625rem;
+		
+
+	}
+	.size{
+		height: 5.5rem;
+	}
+
+	.slide{
+		width: 100%;
+		padding: 0 3%;
 	}
 }
 
@@ -180,6 +194,24 @@ body{
 		display: block;
 	}
 
+	.d-block ,.w-100{
+		padding: 0.625rem;
+
+	}
+
+	.size{
+		height: 10.5rem;
+	}
+
+	.slide{
+		width: 100%;
+		padding: 0 3%;
+	}
+
+	.pad{
+		padding: 0 50px;
+	}
+
 }
 
 @media all and (min-width: 992px){
@@ -206,7 +238,7 @@ body{
 		padding: 0 1.875rem;
 	}
 
-  2
+  
 	.hide{
 		display: block;
 	}
@@ -244,5 +276,14 @@ body{
 	.hide-logo{
 		display: block;
 	}
+		
+	.slide{
+		width: 100%;
+	}
+
+	.pad{
+		padding: 0 50px;
+	}
+
 
 }
