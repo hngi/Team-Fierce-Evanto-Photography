@@ -1,7 +1,6 @@
 /* for Desktop and big screens */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 .items{
-    border:0.2px solid black;
     border-radius: 8px;
     margin-top:50px;
     margin-left:5vw;
@@ -11,6 +10,13 @@
     height: 100px;
     max-height: 100px;
     margin-bottom:30px !important
+}
+a{
+    text-decoration: none;
+    color: inherit !important
+}
+a:hover{
+    text-decoration: none !important
 }
 /* transition for the services cards */
 .items:hover{
