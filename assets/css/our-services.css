@@ -1,0 +1,83 @@
+/* for Desktop and big screens */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.items{
+    border:0.2px solid black;
+    border-radius: 8px;
+    margin-top:50px;
+    margin-left:5vw;
+    transition: all 0.3s ease-in-out
+}
+.items p{
+    height: 100px;
+    max-height: 100px;
+    margin-bottom:30px !important
+}
+/* transition for the services cards */
+.items:hover{
+    transform: scale(1.06);
+    transition: all 0.3s ease-in-out;
+}
+body{
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+button{
+    background-color: #FF7A00 !important
+}
+button:hover{
+    background-color: rgb(139, 70, 6) !important
+} 
+button:active, button:focus{
+    outline:none;
+    box-shadow: none !important
+}
+hr{
+    background-color:#FF7A00;
+    width:20%;
+    position: relative;
+    left:40%;
+}
+h4{
+    font-size:1.6vw;
+    font-weight: bolder !important
+}
+
+/* Small screen */
+@media only screen and (max-width:576px){
+    .items{
+        margin:20px 0 0 0;
+        width:100%;
+        padding:0 40px
+    }
+    .myflex{
+        padding:0 10vw
+    }
+    button{
+        font-size: 5vw !important;
+    }
+    h4{
+        font-size: 6vw; 
+        font-weight:bolder !important;
+    }
+    
+}
+/* for tablets */
+@media only screen and (min-width:600px){
+    @media screen and (max-width:1250px){
+    .items{margin-left:4vw;
+        padding:0 4vw;
+    }
+    .myflex{
+        padding:0 2vw !important
+    }
+    .main_nav{
+        display: flex;
+        width: 27% !important
+    }
+    h4{
+        font-size: 2.2vw;
+        font-weight: bolder !important
+    }
+  }
+    
+}
