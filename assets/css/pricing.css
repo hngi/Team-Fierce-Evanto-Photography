@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    font-family: 'qsregular', sans-serif !important;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none!important;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'qsregular', sans-serif;
+    text-size-adjust: inherit;
+    font-size-adjust: inherit;
+}
+.header_text h1{
+    font-family: 'qsbold';
+
+}
+.header_line{
+    display: block;
+    width: 80px;
+    border-bottom: 1px solid #FF7A00;
+    margin-bottom: 50px;
+}
+#zuri-prices1{
+    background: url(/Images/pricing1.png) center center/cover no-repeat;
+    height: 100vh;
+}
+#zuri-prices2{
+    background: url(/Images/pricing2.png)  center center/cover no-repeat;
+    height: 100vh;
+}
+#zuri-prices3{
+    background: url(/Images/pricing3.png) center center/cover no-repeat;
+    height: 100vh;
+}
+.zuri-prices{
+    position: relative;
+    margin-left: 10px;
+}
+.zuri-badges h2 span{
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+}
+.btn{
+    background-color: black!important;
+    padding: 0.5px 30px; 
+    border-radius: 25px;
+    margin: 20px 20px;
+}
+.badge-warning{
+    margin-bottom: 35px;
+    color: white!important;
+    background-color: #FF7A00!important;
+}
+.badge-dark{
+    background-color: black!important;
+}
+.container-fluid{
+    text-align:center;
+}
+section p{
+    font-family: 'qsregular';
+    font-size: 1.2rem;
+}
+section h1, h3, h6{
+    color: white;
+    font-weight: bold;
+    font-family: 'qsbold';
+}
+
+.bg-warning{
+    background-color:  #FF7A00!important;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+.contact-us{
+    padding:10px 20px;
+}
+
+@media screen and (max-width:768px){
+    
+    .zuri-prices{
+        margin-bottom: 20px;
+        padding: 0px 20px 0px;
+    }
+    
+}
+/* Ordering of divs in mobile view*/
+@media screen and (max-width:576px){
+    #zuri-prices1{
+        order: 1;
+    }
+    #zuri-prices2{
+        order: 3;
+    } 
+     #zuri-prices3{
+        order: 5;
+     }
+    #btnone{
+        order: 2;
+    }
+    #btntwo{
+        order: 4;
+    }
+    #btnthree{
+        order: 6;
+    }
+    
+    .btn{
+        margin-left: 150px;
+    }
+    .contact-us{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:320px){
+ 
+    .btn{
+        margin-left: 50px;
+    }
+    .contact-us{
+        font-size: 8px;
+    }
+    
+}
+    
