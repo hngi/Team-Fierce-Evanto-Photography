@@ -161,13 +161,13 @@
                     <h5 class="font-weight-bold contact__support">Conatct Us To Get Free Support.</h5>
                 </div>
          <!-- form -->
-                <form>
+                <form action="../php/contact_form.php" method="POST">
                     <div class="form-group row pt-1rem pb-1rem">
 
          <!-- input message-->
               
                 <div class="input-group col-sm-8">
-                    <textarea name="text" class="form-control contact__textarea contact__rightbar-input" placeholder="Your Message Here" id="message" cols="30" rows="5"></textarea>
+                    <textarea name="message" class="form-control contact__textarea contact__rightbar-input" placeholder="Your Message Here" id="message" cols="30" rows="5"></textarea>
                 </div>
              
               
@@ -175,11 +175,11 @@
                 <div class="col-sm-4">
 
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control contact__rightbar-input" placeholder="Name">
+                    <input type="text" name="name" class="form-control contact__rightbar-input" placeholder="Name">
                 </div>
 
                 <div class=" input-group mb-3">
-                    <input type="email" class="form-control contact__rightbar-input" placeholder="Email">
+                    <input type="email" name="email" class="form-control contact__rightbar-input" placeholder="Email">
                 </div>
             <!-- form button -->
                 <button type="submit" class="btn contact__rightbar-btn w-100">Send
