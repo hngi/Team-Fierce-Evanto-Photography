@@ -3,7 +3,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $message = $_POST["message"];
 
-$subject = "New Message from Envanto Photography";
+$subject = "New Message from onepage personal";
 
 $EmailTo = "useremail@gmail.com"; // Enter your email address here
 
